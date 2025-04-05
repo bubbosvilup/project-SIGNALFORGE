@@ -1,2 +1,32 @@
-Script avviato Sat 04/05/2025 15:21:47.70 
-Script avviato Sat 04/05/2025 15:22:30.68 
+[Sat 04/05/2025 16:13:16.30] - Skipped: rand=95 
+[Sat 04/05/2025 16:13:17.26] - Skipped: rand=99 
+[Sat 04/05/2025 16:15:48.42] - Executed: rand=92 - EntropyDaemon forges the last signal. 
+[Sat 04/05/2025 16:16:22.45] - Executed: rand=3 - EntropyDaemon forges an unstable thought. 
+[Sat 04/05/2025 16:16:34.02] - Skipped: rand=42 
+[Sat 04/05/2025 16:16:35.67] - Skipped: rand=45 
+[Sat 04/05/2025 16:16:37.12] - Skipped: rand=52 
+[Sat 04/05/2025 16:16:38.45] - Skipped: rand=55 
+[Sat 04/05/2025 16:16:39.67] - Skipped: rand=58 
+[Sat 04/05/2025 16:16:40.91] - Skipped: rand=62 
+[Sat 04/05/2025 16:16:42.39] - Skipped: rand=68 
+[Sat 04/05/2025 16:16:43.67] - Skipped: rand=71 
+[Sat 04/05/2025 16:16:44.95] - Skipped: rand=75 
+[Sat 04/05/2025 16:16:46.17] - Skipped: rand=81 
+[Sat 04/05/2025 16:16:47.41] - Skipped: rand=84 
+[Sat 04/05/2025 16:16:48.68] - Skipped: rand=88 
+[Sat 04/05/2025 16:16:49.77] - Skipped: rand=91 
+[Sat 04/05/2025 16:16:50.97] - Skipped: rand=94 
+[Sat 04/05/2025 16:16:52.21] - Executed: rand=1 - Subroutine Zeta fractures a recursive pulse. 
+[Sat 04/05/2025 16:23:10.06] - Executed: rand=32 - PixelWraith forges a corrupted frame. 
+[Sat 04/05/2025 16:23:21.01] - Skipped: rand=68 
+[Sat 04/05/2025 16:23:22.51] - Skipped: rand=74 
+[Sat 04/05/2025 16:23:23.85] - Skipped: rand=78 
+[Sat 04/05/2025 16:23:25.22] - Skipped: rand=84 
+[Sat 04/05/2025 16:23:26.51] - Skipped: rand=87 
+[Sat 04/05/2025 16:23:27.83] - Skipped: rand=91 
+[Sat 04/05/2025 16:23:29.16] - Skipped: rand=94 
+[Sat 04/05/2025 16:23:30.51] - Executed: rand=0 - GlitchDrive transmits a forbidden echo. 
+[Sat 04/05/2025 16:23:34.77] - Executed: rand=14 - EntropyDaemon forges a quantum blink. 
+[Sat 04/05/2025 16:23:37.58] - Executed: rand=23 - DreamCore compiles an unstable thought. 
+[Sat 04/05/2025 16:23:40.37] - Executed: rand=33 - Protocol Nova fractures the last signal. 
+[Sat 04/05/2025 16:23:43.29] - Skipped: rand=43 
