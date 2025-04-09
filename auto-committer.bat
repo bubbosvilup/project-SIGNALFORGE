@@ -5,6 +5,19 @@ cd /d "C:\Users\be_fr\tests"
 :: === Config ===
 set threshold=35
 
+:: === Log utente attivo ===
+echo. >> log-debug.txt
+echo [%date% %time%] - Triggered by user: %username% >> log-debug.txt
+
+:: === Verifica autenticazione GitHub ===
+git ls-remote https://github.com/bubbosvilup/project-SIGNALFORGE.git >nul 2>&1
+if errorlevel 1 (
+    echo [%date% %time%] - ❌ Auth failed. Skipping commit. >> log-debug.txt
+    exit /b
+) else (
+    echo [%date% %time%] - ✅ Auth OK. Proceeding. >> log-debug.txt
+)
+
 :: === Rotate log once a week (on Sunday) ===
 for /f %%d in ('powershell -command "(Get-Date).DayOfWeek"') do set day=%%d
 if /i "!day!"=="Sunday" (
