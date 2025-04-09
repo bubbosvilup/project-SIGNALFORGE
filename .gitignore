@@ -1,0 +1,9 @@
+auto-committer.bat
+log-debug.txt
+log-*.txt
+.git/config
+*.bak
+*.tmp
+*.swp
+node_modules/
+package-lock.json
