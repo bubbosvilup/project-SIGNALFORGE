@@ -1,9 +1,15 @@
+# Script tecnico e log
 auto-committer.bat
 log-debug.txt
 log-*.txt
-.git/config
+
+# Editor/backup
 *.bak
 *.tmp
 *.swp
+
+# Node modules
 node_modules/
-package-lock.json
+
+# all vscode
+.vscode/
