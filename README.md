@@ -134,3 +134,52 @@ Internal reality simulation tool.
 Usage neither recommended nor forbidden by conventional physics.
 
 END OF DOCUMENT [LEVEL-3 CLEARANCE REQUIRED FOR FULL ACCESS]
+
+## ((( OPERATIONAL EXTENSIONS )))
+
+> Signalforge v2.0 introduces experimental UI modules layered over the core temporal emitter.  
+> Designed for direct interface via localized observer shells. Outputs persist only during runtime drift.
+
+### ░▒▓ INTERACTIVE DASHBOARD PROTOCOL ▓▒░
+
+| Module                 | Description                                                             |
+| ---------------------- | ----------------------------------------------------------------------- |
+| `quantum_dashboard.py` | Real-time monitoring shell. Visualizes entropy metrics and signal flux. |
+| `auto-committer.bat`   | Task-scheduled commit echo emitter. Phantom presence generator.         |
+| `signal-ambient.bat`   | [Prototype] Background resonance daemon. Integrates with local UI.      |
+
+### ▼ ACTIVE FEATURES
+
+- Live visualization of quantum field dynamics and entropy drift
+- Extraction and parsing of `forge.log` for recent signal manifestation
+- Commit frequency analytics mapped onto temporal matrices
+- Manual override controls for push events and scheduler reprogramming
+- Experimental animation layers (glitch streams, field pulses, semantic echo)
+
+### ▒░ FUTURE EXPANSIONS ░▒
+
+```
+FREQUENCY MAP:
+       0   6  12  18  24 HOUR
+    ┌─────────────────────────┐
+MON │░░░██████████████████░░░│ ████████
+TUE │░░░░███████████████░░░░░│ ███████
+WED │░░░░░██████████████░░░░░│ ███████
+THU │░░░░██████████████████░░│ ████████
+FRI │░░░███████████████████░░│ ████████
+SAT │░░██████████████████████│ █████████
+SUN │░░░░░████████████░░░░░░░│ ██████
+    └─────────────────────────┘
+```
+
+```
+QUANTUM DENSITY CORRELATION:
+█████████████████████ STRONG POSITIVE
+████████████████░░░░░ MODERATE
+████████░░░░░░░░░░░░░ WEAK
+░░░░░░░░░░░░░░░░░░░░░ NONE
+```
+
+- Background agents triggering ambient effects
+- Visual entropy compression via ASCII cinema mode
+- Event-linked terminal distortion and reactive sound nodes
