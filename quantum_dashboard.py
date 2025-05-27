@@ -175,11 +175,12 @@ def make_control_interface():
     # Animated control elements
     pulse_char = random.choice(["◉", "◎", "●"])
     
-    control_table.add_row(Text("      ╔═══════════════════════════════════════╗", style="bold bright_white"))
-    control_table.add_row(Text(f"       ║    {pulse_char} MANUAL SIGNAL EMISSION READY {pulse_char}    ║", style="bold bright_white"))
-    control_table.add_row(Text("      ╠═══════════════════════════════════════╣", style="bold bright_white"))
-    control_table.add_row(Text("      ║         [P] EXECUTE QUANTUM PUSH      ║", style="bold bright_green"))
-    control_table.add_row(Text("      ╚═══════════════════════════════════════╝", style="bold bright_white"))
+    control_table.add_row(Text("      ╔═══════════════════════════════════════╗", style="bold bright_green"))
+    control_table.add_row(Text(f"       ║    {pulse_char} MANUAL SIGNAL EMISSION READY {pulse_char}    ║", style="bold bright_green"))
+    control_table.add_row(Text("      ╠═══════════════════════════════════════╣", style="bold bright_green"))
+    control_table.add_row(Text("      ║        [P] EXECUTE QUANTUM PUSH       ║", style="bold bright_green"))
+    control_table.add_row(Text("      ║        [S] OPEN SCHEDULER INTERFACE   ║", style="bold bright_green"))
+    control_table.add_row(Text("      ╚═══════════════════════════════════════╝", style="bold bright_green"))
     
     return Panel(
         control_table,
@@ -242,6 +243,8 @@ def listen_for_input():
         key = msvcrt.getch()
         if key in [b'p', b'P']:
             subprocess.Popen('start cmd /c auto-committer.bat', shell=True)
+        elif key in [b's', b'S']:
+            subprocess.Popen('start cmd /k python quantum_scheduler_internal.py', shell=True)
 
 def run_dashboard():
     # Setup terminal size and appearance
