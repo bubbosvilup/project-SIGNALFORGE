@@ -19,7 +19,7 @@ execution_chance = 50
 last_emission = time.time()
 
 # Funzione slider ASCII
-def make_slider(label, value, min_val, max_val, step, width=20):
+def make_slider(label, value, min_val, max_val, step):
     blocks = (value - min_val) // step
     total_blocks = (max_val - min_val) // step
     filled = "█" * blocks
@@ -30,8 +30,18 @@ def make_slider(label, value, min_val, max_val, step, width=20):
 def make_scheduler_panel():
     table = Table.grid(padding=1)
     table.add_column(justify="left")
+
+    # Countdown
+    now = time.time()
+    elapsed = now - last_emission
+    interval_seconds = interval_minutes * 60
+    remaining = max(0, int(interval_seconds - elapsed))
+    mins, secs = divmod(remaining, 60)
+    countdown_text = f"NEXT ROLL IN: {mins:02}:{secs:02}"
+
     table.add_row(Text(make_slider("EXECUTION INTERVAL", interval_minutes, 15, 180, 15), style="bold cyan"))
     table.add_row(Text(make_slider("EXECUTION PROBABILITY", execution_chance, 0, 100, 5), style="bold green"))
+    table.add_row(Text(countdown_text, style="bold yellow"))
     table.add_row("")
     table.add_row("[A/D] Adjust interval    [Q/E] Adjust probability")
     table.add_row("[X] Exit scheduler")
@@ -60,7 +70,9 @@ def scheduler_loop():
     global last_emission
     while True:
         now = time.time()
-        if now - last_emission >= interval_minutes * 60:
+        elapsed = now - last_emission
+        interval_seconds = interval_minutes * 60
+        if elapsed >= interval_seconds:
             roll = random.randint(1, 100)
             timestamp = time.strftime("%a %m/%d/%Y %H:%M:%S", time.localtime())
             with open("log-debug.txt", "a", encoding="utf-8") as log:
